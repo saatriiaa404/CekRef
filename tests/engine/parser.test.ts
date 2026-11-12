@@ -230,6 +230,28 @@ describe("parseReference hard cases", () => {
     ]);
   });
 
+  it("keeps IEEE family names with particles together", () => {
+    const parsed = parseReference("J. van der Berg, M. bin Ahmad, and L. de la Cruz, “Title,” Journal, 2020.");
+    expect(parsed.authors).toEqual([
+      { family: "van der Berg", given: "J." },
+      { family: "bin Ahmad", given: "M." },
+      { family: "de la Cruz", given: "L." },
+    ]);
+  });
+
+  it("does not treat a capitalized given name like 'Di' as a particle", () => {
+    const parsed = parseReference("Di Wang, “Title,” Journal, 2020.");
+    expect(parsed.authors).toEqual([{ family: "Wang", given: "Di" }]);
+  });
+
+  it("splits an IEEE full name without initials into given and family", () => {
+    const parsed = parseReference("Andi Wijaya and Ludwig van Beethoven, “Title,” Journal, 2020.");
+    expect(parsed.authors).toEqual([
+      { family: "Wijaya", given: "Andi" },
+      { family: "van Beethoven", given: "Ludwig" },
+    ]);
+  });
+
   it("reads a DOI written as doi.org URL, dx.doi.org URL, or doi: prefix the same way", () => {
     const base = "Smith, J. (2020). Title. Journal, 1, 1.";
     expect(parseReference(`${base} https://doi.org/10.1000/ABC.1`).doi).toBe("10.1000/abc.1");

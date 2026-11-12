@@ -127,12 +127,35 @@ function parseIeeeAuthors(text: string): { authors: Author[]; etAl: boolean } {
     .map((name) => name.trim())
     .filter((name) => name !== "");
 
-  const authors = names.map((name): Author => {
-    const words = name.split(/\s+/);
+  return { authors: names.map(splitIeeeName), etAl };
+}
+
+// Lowercase name particles that start a multi-word family name ("van der Berg", "bin Ahmad").
+const NAME_PARTICLES = new Set([
+  "van", "von", "der", "den", "de", "da", "di", "du", "la", "le",
+  "del", "della", "dos", "bin", "binti", "al", "el", "ten", "ter",
+]);
+
+/**
+ * "J. van der Berg" -> given "J.", family "van der Berg"; "Andi Wijaya" -> "Andi" / "Wijaya".
+ * Particles only count when written in lowercase, so a given name like "Di" in "Di Wang" is not one.
+ */
+function splitIeeeName(name: string): Author {
+  const words = name.split(/\s+/);
+  const firstNonInitial = words.findIndex((word) => !word.endsWith("."));
+  if (firstNonInitial === -1) {
+    // Only initials: treat the last word as the family name.
     const family = words.pop() ?? name;
     return { family, given: words.length > 0 ? words.join(" ") : null };
-  });
-  return { authors, etAl };
+  }
+
+  const initials = words.slice(0, firstNonInitial);
+  const rest = words.slice(firstNonInitial);
+  const particleAt = rest.findIndex((word, i) => i < rest.length - 1 && NAME_PARTICLES.has(word));
+  const familyStart = particleAt === -1 ? rest.length - 1 : particleAt;
+
+  const given = [...initials, ...rest.slice(0, familyStart)];
+  return { family: rest.slice(familyStart).join(" "), given: given.length > 0 ? given.join(" ") : null };
 }
 
 function parseIeee(raw: string, quoteStart: number, quoteEnd: number): Omit<ParsedReference, "raw" | "doi" | "url"> {
