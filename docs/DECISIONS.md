@@ -43,3 +43,13 @@ Format: tanggal — keputusan — alasan.
 
 - **Keputusan:** Jaro-Winkler standar (skala awalan 0.1, awalan maks. 4, tanpa ambang boost). Jaccard dihitung atas himpunan token setelah normalisasi. Normalizer memakai peta khusus untuk huruf yang tidak terurai lewat Unicode NFKD (Đ, Ł, ø, ß, æ, œ, ı) dan mendekode entitas HTML.
 - **Alasan:** Parameter standar memberi nilai yang cocok dengan contoh di literatur (MARTHA/MARHTA = 0.961) sehingga mudah dipertanggungjawabkan. Peta khusus diperlukan karena Crossref menyimpan "Đức" sebagai "Duc" dan nama jurnal sebagai "Computers &amp; Education".
+
+## 2026-11-12 — Fase 1: perbaikan tiga keterbatasan
+
+Memperbarui keterbatasan yang dicatat pada dua entri di atas.
+
+- **Keputusan:**
+  - **Judul APA:** titik tidak dianggap akhir judul bila kata sebelumnya berupa huruf kapital tunggal atau singkatan bertitik (`U.S.`, `A.I.`), atau singkatan umum (`e.g.`, `i.e.`, `vs.`, `etc.`, `et al.`, `cf.`, `Dr.`, `St.`, `No.`, `Vol.`).
+  - **Nama IEEE:** inisial di depan dibuang dulu. Nama belakang dimulai dari partikel pertama yang ditulis huruf kecil (`van`, `der`, `de`, `bin`, `binti`, `al`, dst.); bila tidak ada partikel, nama belakang adalah kata terakhir. Partikel bertulisan kapital tidak dihitung, agar nama depan seperti "Di" pada "Di Wang" tidak salah tafsir.
+  - **Splitter tanpa pemisah:** baris dianggap awal entri baru bila diawali `Nama, X.` (boleh didahului partikel), memuat tahun APA dalam 150 karakter pertama, atau diawali inisial IEEE dan memuat judul bertanda kutip. Baris lain disambung ke entri sebelumnya. Bila tak satu baris pun cocok, tetap satu baris satu entri.
+- **Alasan:** Ketiganya realistis pada daftar pustaka mahasiswa yang disalin dari Word. Sisa keterbatasan: judul yang benar-benar diakhiri satu huruf (mis. "…vitamin C. Journal…") akan salah potong; daftar IEEE tanpa nomor yang daftar penulisnya terpotong ke baris berikutnya bisa terbelah. Keduanya jarang, dan daftar IEEE hampir selalu bernomor `[n]`.
