@@ -8,7 +8,7 @@
 
 Aplikasi web tempat mahasiswa menempelkan daftar pustaka (APA 7 / IEEE). Sistem memecah tiap entri, mencocokkannya ke Crossref, lalu memberi status **Cocok**, **Cocok Sebagian**, atau **Tidak Ditemukan di Database** beserta perbandingan per field dan penjelasan edukatif.
 
-Konteks: capstone mata kuliah Literasi Digital, prodi Teknik Informatika, dikerjakan perorangan (1 orang), waktu < 4 minggu. Penilaian menekankan **demo yang berjalan mulus** serta **dokumentasi & proses** (Git, testing, arsitektur). Komponen inti (parser, algoritma kemiripan, skor) **harus ditulis sendiri**, bukan memakai library siap pakai.
+Konteks: capstone mata kuliah Literasi Digital, prodi Teknik Informatika, tim 2 orang (pembagian tugas di `docs/PANDUAN-TIM.md`), waktu < 4 minggu. Penilaian menekankan **demo yang berjalan mulus** serta **dokumentasi & proses** (Git, testing, arsitektur). Komponen inti (parser, algoritma kemiripan, skor) **harus ditulis sendiri**, bukan memakai library siap pakai.
 
 ## 2. Prinsip yang tidak boleh dilanggar
 
@@ -93,7 +93,7 @@ Setiap hasil menyertakan `reasons[]` berbahasa Indonesia, mis. "Tahun berbeda (i
 
 ## 6. Evaluasi
 
-- Set uji di `data/testset.json`: `[{ raw, label: "real" | "problematic", source }]`. **Diisi manual oleh pengembang** (referensi asli diambil dari jurnal sungguhan termasuk SINTA; referensi bermasalah dari ChatGPT yang sudah dicek manual). Claude Code tidak boleh mengarang isi set uji.
+- Set uji di `data/testset.json`: `[{ raw, label: "real" | "problematic", source }]`. **Diisi manual oleh tim** (referensi asli diambil dari jurnal sungguhan termasuk SINTA; referensi bermasalah dari ChatGPT yang sudah dicek manual). Claude Code tidak boleh mengarang isi set uji.
 - `npm run eval` menghitung precision, recall, F1 (kelas positif = bermasalah, yakni label selain Cocok), confusion matrix, rata-rata waktu per entri, untuk kedua `TITLE_METHOD`. Output ke `reports/eval-<tanggal>.md`.
 
 ## 7. Keamanan & privasi
@@ -109,6 +109,7 @@ Setiap hasil menyertakan `reasons[]` berbahasa Indonesia, mis. "Tahun berbeda (i
 - Sebelum menulis kode fase baru, tuliskan rencana singkat dan tunggu persetujuan.
 - Setelah selesai: jalankan `npm test`, laporkan hasilnya, commit dengan pesan konvensional (`feat:`, `fix:`, `test:`, `docs:`).
 - Catat keputusan penting di `docs/DECISIONS.md` (tanggal, keputusan, alasan) — dipakai untuk laporan.
+- Setiap anggota commit dari akun Git/GitHub-nya sendiri, lewat branch per fitur dan Pull Request yang di-review anggota lain (lihat `docs/PANDUAN-TIM.md`). Jangan menambahkan baris `Co-Authored-By: Claude` pada commit.
 
 ## 9. Catatan Next.js
 

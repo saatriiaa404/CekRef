@@ -4,11 +4,13 @@ Sistem verifikasi keaslian daftar pustaka berbasis pencocokan metadata untuk lit
 
 Mahasiswa menempelkan daftar pustaka (APA 7 / IEEE), lalu CekRef memecah tiap entri, mencocokkannya ke Crossref, dan memberi status **Cocok**, **Cocok Sebagian**, atau **Tidak Ditemukan di Database**.
 
-> Status proyek: **Fase 0 (setup)**. Belum ada fitur yang berjalan.
+> Status proyek: **Fase 1 selesai** (engine inti: splitter, parser, normalizer, similarity). Pencocokan ke Crossref dan antarmuka belum tersedia.
+>
+> Anggota tim baru: mulai dari [docs/PANDUAN-TIM.md](docs/PANDUAN-TIM.md).
 
 ## Prasyarat
 
-- Node.js 20.19 atau lebih baru (dikembangkan dengan Node 24)
+- Node.js 24 LTS (minimal 22.12, syarat Vitest 5)
 - npm 10 atau lebih baru
 - Git
 

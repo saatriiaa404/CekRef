@@ -53,3 +53,15 @@ Memperbarui keterbatasan yang dicatat pada dua entri di atas.
   - **Nama IEEE:** inisial di depan dibuang dulu. Nama belakang dimulai dari partikel pertama yang ditulis huruf kecil (`van`, `der`, `de`, `bin`, `binti`, `al`, dst.); bila tidak ada partikel, nama belakang adalah kata terakhir. Partikel bertulisan kapital tidak dihitung, agar nama depan seperti "Di" pada "Di Wang" tidak salah tafsir.
   - **Splitter tanpa pemisah:** baris dianggap awal entri baru bila diawali `Nama, X.` (boleh didahului partikel), memuat tahun APA dalam 150 karakter pertama, atau diawali inisial IEEE dan memuat judul bertanda kutip. Baris lain disambung ke entri sebelumnya. Bila tak satu baris pun cocok, tetap satu baris satu entri.
 - **Alasan:** Ketiganya realistis pada daftar pustaka mahasiswa yang disalin dari Word. Sisa keterbatasan: judul yang benar-benar diakhiri satu huruf (mis. "…vitamin C. Journal…") akan salah potong; daftar IEEE tanpa nomor yang daftar penulisnya terpotong ke baris berikutnya bisa terbelah. Keduanya jarang, dan daftar IEEE hampir selalu bernomor `[n]`.
+
+## 2026-11-13 — Kembali menjadi tim 2 orang
+
+Menggantikan keputusan "Proyek dikerjakan perorangan" (2026-11-12).
+
+- **Keputusan:** Mata kuliah tetap mewajibkan tim 2 orang. Anggota A mengerjakan Fase 0–1 dan selanjutnya engine, Crossref, serta evaluasi; Anggota B bergabung mulai Fase 2 dan mengerjakan login, riwayat, edukasi, pre/post-test, lalu UI. Testset dikumpulkan separuh-separuh. Rincian di `docs/PANDUAN-TIM.md`.
+- **Alasan:** Riwayat Git Fase 0–1 dibiarkan apa adanya karena mencerminkan siapa yang benar-benar mengerjakan. Mulai Fase 2, setiap anggota commit dari akunnya sendiri lewat branch dan Pull Request yang di-review anggota lain, supaya kontribusi masing-masing terlihat jelas.
+
+## 2026-11-13 — Syarat Node.js 22.12+ (disarankan 24 LTS)
+
+- **Keputusan:** README dan panduan tim mensyaratkan Node.js 22.12 atau lebih baru, disarankan 24 LTS.
+- **Alasan:** Vitest 5 hanya mendukung Node `^22.12.0 || ^24.0.0 || >=26.0.0`. README sebelumnya keliru menulis 20.19.
