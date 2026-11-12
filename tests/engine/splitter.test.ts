@@ -56,6 +56,32 @@ describe("splitEntries", () => {
     expect(splitEntries(text)).toEqual(["Smith, J. (2020). One. J.", "Doe, A. (2021). Two. J."]);
   });
 
+  it("rejoins wrapped entries when there are no blank lines or markers", () => {
+    const text = [
+      "Smith, J., & Doe, A. (2020). A study of",
+      "something important. Journal of Things,",
+      "12(3), 1–10.",
+      "van der Berg, J. (2019). Another",
+      "title. Journal, 1, 1.",
+      "World Health Organization. (n.d.). Coronavirus",
+      "disease. https://who.int",
+    ].join("\n");
+    expect(splitEntries(text)).toEqual([
+      "Smith, J., & Doe, A. (2020). A study of something important. Journal of Things, 12(3), 1–10.",
+      "van der Berg, J. (2019). Another title. Journal, 1, 1.",
+      "World Health Organization. (n.d.). Coronavirus disease. https://who.int",
+    ]);
+  });
+
+  it("finds all 15 fixture entries even with the blank lines removed", () => {
+    const compact = fixture.replace(/\n\s*\n/g, "\n");
+    expect(splitEntries(compact)).toEqual(splitEntries(fixture));
+  });
+
+  it("falls back to one entry per line when no line looks like an entry start", () => {
+    expect(splitEntries("some free text\nmore free text")).toEqual(["some free text", "more free text"]);
+  });
+
   it("handles Windows line endings", () => {
     const text = "Smith, J. (2020). One. J.\r\n\r\nDoe, A. (2021). Two. J.\r\n";
     expect(splitEntries(text)).toEqual(["Smith, J. (2020). One. J.", "Doe, A. (2021). Two. J."]);
