@@ -1,0 +1,29 @@
+Dilasani, R., Sudiran, & Hartono. (2025). Students’ perceptions of English teachers’ emotional intelligence in shaping their speaking skills: A qualitative study. Journal of English and Education (JEE), 11(2), 88–102. https://doi.org/10.20885/jee.v11i2.43416
+
+Saputra, M. A., Yolanda, R., & Putriani, Z. (2025). Cross-curricular perspectives on English language education: A qualitative comparative study between Indonesia and Australia. Journal of English and Education (JEE), 11(2), 103–117. https://doi.org/10.20885/jee.v11i2.40416
+
+Pravitasari, H., Yanto, E. S., & Fatihah, I. N. K. (2025). Emotional experiences and identity construction of pre-service English teachers during teaching practicum in Indonesia. Journal of English and Education (JEE), 11(1), 68–87. https://doi.org/10.20885/jee.v11i1.40130
+
+Agustina, S., Hasby, & Prasetya, C. (2026). Augmented Reality-Based LKPD Innovation Using Assemblr Edu for Atomic Structure Content. IJCER (International Journal of Chemistry Education Research), 10(1), 56–66. https://doi.org/10.20885/ijcer.vol10.iss1.art6
+
+N. L. Sudarno, S. Anggoro, and M. Fukui, “Development of Augmented Reality Learning Media Based on Inquiry Based Learning Using Assemblr Edu on Light and Properties Material,” JES, vol. 9, no. 5, pp. 3322–3335, Sep. 2025. [Online]. Available: https://jes.ejournal.unri.ac.id/index.php/JES/article/view/898
+
+S. Yamtinah et al., “Augmented reality learning media based on tetrahedral chemical representation: How effective in learning process?,” EURASIA Journal of Mathematics, Science and Technology Education, vol. 19, no. 8, Art. no. em2313, Aug. 2023, doi: 10.29333/ejmste/13436.
+
+P. N. Son, T. T. A. Dang, V. T. T. Hoai, H. M. Thai, V. T. Chu, and M. H. Nguyen, “Augmented reality to enhance chemistry learning outcomes in Vietnamese lower secondary schools: A quasi-experimental study on acid-base–pH–oxide–salt topics,” European Journal of Educational Research, vol. 14, no. 4, pp. 1259–1275, Oct. 2025, doi: 10.12973/eu-jer.14.4.1259.
+
+Radianti, J., Majchrzak, T. A., Fromm, J., & Wohlgenannt, I. (2020). A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda. Computers & Education, 147, Article 103778. https://doi.org/10.1016/j.compedu.2019.103778
+
+Đức, N. M., & Quang, N. V. (2024). Application of Augmented Reality in Chemistry Education: A Systemic Review Based on Bibliometric Analysis from 2002 to 2023. International Journal of Education in Mathematics, Science and Technology, 12(6), 1415–1434. https://doi.org/10.46328/ijemst.4265
+
+D. A. Karnishyna, T. V. Selivanova, P. P. Nechypurenko, T. V. Starova, and S. O. Semerikov, “Enhancing high school students’ understanding of molecular geometry with augmented reality,” Science Education Quarterly, vol. 1, no. 2, pp. 25–40, Oct. 2024, doi: 10.55056/seq.818.
+
+T. B. Brown et al., “Language models are few-shot learners,” in Advances in Neural Information Processing Systems 33, 2020, pp. 1877–1901. [Online]. Available: https://papers.nips.cc/paper_files/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html
+
+World Health Organization. (n.d.). Coronavirus disease (COVID-19) pandemic. https://www.who.int/emergencies/diseases/novel-coronavirus-2019
+
+Keo, V., Sam, R., Lan, B., & Rouet, W. (2025). Students’ perceptions and effects of technology integration in English learning: A case study at National University of Battambang. Journal of English and Education (JEE), 11(1), 1–26. https://doi.org/10.20885/jee.v11i1.37268
+
+A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” arXiv preprint arXiv:1706.03762, 2017. [Online]. Available: https://arxiv.org/abs/1706.03762
+
+J. Schmidhuber, “Deep learning in neural networks: An overview,” Neural Networks, vol. 61, pp. 85–117, Jan. 2015, doi: 10.1016/j.neunet.2014.09.003.
