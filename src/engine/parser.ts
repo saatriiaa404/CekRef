@@ -71,14 +71,33 @@ function parseApaAuthors(text: string): { authors: Author[]; etAl: boolean } {
   return { authors, etAl };
 }
 
+// Words whose trailing period is an abbreviation, not the end of a title (compared lowercase).
+const TITLE_ABBREVIATIONS = new Set(["e.g", "i.e", "vs", "etc", "al", "cf", "dr", "st", "no", "vol"]);
+// Single capital letter or dotted initialism without its final period: "A", "U.S", "A.I".
+const INITIALISM_RE = /^(?:\p{L}\.)*\p{Lu}$/u;
+
+/**
+ * Index of the mark that ends an APA title, or -1.
+ * A colon never ends it; a period after "U.S", "e.g", "vs", etc. does not either.
+ */
+function findApaTitleEnd(text: string): number {
+  for (const match of text.matchAll(/[.?!](?=\s|$)/g)) {
+    const index = match.index ?? 0;
+    if (text[index] !== ".") return index;
+    const word = (text.slice(0, index).match(/(\S+)$/)?.[1] ?? "").replace(/^[^\p{L}]+/u, "");
+    if (INITIALISM_RE.test(word) || TITLE_ABBREVIATIONS.has(word.toLowerCase())) continue;
+    return index;
+  }
+  return -1;
+}
+
 function parseApa(raw: string, yearMatch: RegExpMatchArray): Omit<ParsedReference, "raw" | "doi" | "url"> {
   const yearStart = yearMatch.index ?? 0;
   const { authors, etAl } = parseApaAuthors(raw.slice(0, yearStart));
   const year = yearMatch[1] ? Number(yearMatch[1]) : null;
 
   const rest = stripLinks(raw.slice(yearStart + yearMatch[0].length));
-  // Title ends at the first sentence-ending mark; a colon inside the title does not end it.
-  const titleEnd = rest.search(/[.?!](?=\s|$)/);
+  const titleEnd = findApaTitleEnd(rest);
   let title: string;
   let afterTitle: string;
   if (titleEnd === -1) {

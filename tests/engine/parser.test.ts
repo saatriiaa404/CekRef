@@ -259,6 +259,23 @@ describe("parseReference hard cases", () => {
     );
   });
 
+  it("does not end an APA title at initialisms like U.S.", () => {
+    const parsed = parseReference("Smith, J. (2020). The U.S. response to AI: A review. Policy Journal, 3(1), 1–9.");
+    expect(parsed.title).toBe("The U.S. response to AI: A review");
+    expect(parsed.venue).toBe("Policy Journal");
+  });
+
+  it("does not end an APA title at common abbreviations like e.g.", () => {
+    const parsed = parseReference("Smith, J. (2020). Effects of vitamins (e.g. vitamin D) on sleep. Sleep Journal, 4, 1–2.");
+    expect(parsed.title).toBe("Effects of vitamins (e.g. vitamin D) on sleep");
+    expect(parsed.venue).toBe("Sleep Journal");
+  });
+
+  it("does not end an APA title at vs.", () => {
+    const parsed = parseReference("Smith, J. (2020). Python vs. Java for beginners. Edu Journal, 1, 1.");
+    expect(parsed.title).toBe("Python vs. Java for beginners");
+  });
+
   it("falls back to style 'unknown' without throwing, still keeping the DOI", () => {
     const parsed = parseReference("Some free text about a paper 10.1000/xyz123");
     expect(parsed.style).toBe("unknown");
