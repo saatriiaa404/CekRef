@@ -138,6 +138,8 @@ Fase 4 tidak membutuhkan Crossref, jadi B bisa langsung mulai. Fase 3 (UI) menam
 
 ### To-do Anggota B
 
+> Penjelasan lengkap setiap tugas, aturan, urutan PR, dan kriteria selesai ada di [FASE-3-4.md](FASE-3-4.md).
+
 - [ ] Terima undangan collaborator, lalu setup laptop (lihat [bagian 4](#4-menjalankan-proyek-di-laptop-sendiri)).
 - [ ] Baca CLAUDE.md, panduan ini, dan DECISIONS.md. Jalankan `npm test` dan pastikan semua lulus.
 - [ ] **Fase 4:**
