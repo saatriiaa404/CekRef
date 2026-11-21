@@ -19,7 +19,7 @@ export function createLimiter({ maxConcurrency, now = Date.now, sleep = defaultS
   let active = 0;
   const waiting: Array<() => void> = [];
   let minInterval = 0;
-  let nextStartAt = 0;
+  let lastStartAt = Number.NEGATIVE_INFINITY;
   let startGate: Promise<void> = Promise.resolve();
 
   async function acquireSlot(): Promise<void> {
@@ -37,12 +37,15 @@ export function createLimiter({ maxConcurrency, now = Date.now, sleep = defaultS
     else active--;
   }
 
-  /** Starts are serialized through a gate so each one waits for the previous start + interval. */
+  /**
+   * Starts are serialized through a gate so each one waits until the previous start + interval.
+   * The interval is read at wait time, so a limit learned from a response applies to the next start.
+   */
   async function waitForStartTurn(): Promise<void> {
     const turn = startGate.then(async () => {
-      const wait = nextStartAt - now();
+      const wait = lastStartAt + minInterval - now();
       if (wait > 0) await sleep(wait);
-      nextStartAt = now() + minInterval;
+      lastStartAt = now();
     });
     startGate = turn.catch(() => undefined);
     await turn;
