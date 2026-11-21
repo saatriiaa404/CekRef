@@ -2,6 +2,8 @@
 
 Untuk Anggota B. Dokumen ini menjelaskan **apa yang dibuat, aturan yang wajib diikuti, cara memecahnya menjadi Pull Request, dan kapan fase dianggap selesai**.
 
+Rancangan tampilan setiap halaman ada di [UI.md](UI.md).
+
 Sumber aturan: [CLAUDE.md](../CLAUDE.md) Bagian 5 dan 7, serta [PROMPTS.md](../PROMPTS.md). Hal yang belum diputuskan ditandai **(sepakati bersama)**. Hasil kesepakatannya dicatat di [DECISIONS.md](DECISIONS.md).
 
 > Sebelum menulis kode Next.js, baca dokumentasi di `node_modules/next/dist/docs/` (lihat `AGENTS.md`). Proyek ini memakai Next.js 16, dan banyak cara lama sudah berubah.
