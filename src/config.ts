@@ -20,6 +20,8 @@ export const config = {
     partial: 0.6,
     /** DOI found but title similarity below this -> "DOI mengarah ke artikel lain" */
     doiTitleMismatch: 0.6,
+    /** A compared field below this similarity gets its own explanation in reasons[]. */
+    fieldMismatch: 0.85,
   },
 
   /** Similarity used for titles and venues. */
