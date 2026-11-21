@@ -4,7 +4,7 @@ Sistem verifikasi keaslian daftar pustaka berbasis pencocokan metadata untuk lit
 
 Mahasiswa menempelkan daftar pustaka (APA 7 / IEEE), lalu CekRef memecah tiap entri, mencocokkannya ke Crossref, dan memberi status **Cocok**, **Cocok Sebagian**, atau **Tidak Ditemukan di Database**.
 
-> Status proyek: **Fase 1 selesai** (engine inti: splitter, parser, normalizer, similarity). Pencocokan ke Crossref dan antarmuka belum tersedia.
+> Status proyek: **Fase 2 selesai** (engine lengkap + Crossref + cache + `DEMO_MODE`, bisa dicoba lewat `npm run check`). Antarmuka web belum tersedia.
 >
 > Anggota tim baru: mulai dari [docs/PANDUAN-TIM.md](docs/PANDUAN-TIM.md).
 
@@ -28,11 +28,27 @@ Mahasiswa menempelkan daftar pustaka (APA 7 / IEEE), lalu CekRef memecah tiap en
    cp .env.example .env
    ```
 
-3. Jalankan server pengembangan, lalu buka <http://localhost:3000>:
+3. Buat database SQLite lokal (ulangi setiap ada migrasi baru setelah `git pull`):
+
+   ```bash
+   npm run db:migrate
+   ```
+
+4. Jalankan server pengembangan, lalu buka <http://localhost:3000>:
 
    ```bash
    npm run dev
    ```
+
+## Mencoba pengecekan dari terminal
+
+Periksa daftar pustaka di sebuah file teks (satu referensi per baris, dipisah baris kosong, atau bernomor `[1]`/`1.`):
+
+```bash
+npm run check -- tests/fixtures/references.txt
+```
+
+Hasilnya label (Cocok / Cocok Sebagian / Tidak Ditemukan di Database), skor, dan alasan per entri. Respons Crossref disimpan di cache `dev.db`, jadi pemeriksaan kedua bisa dijalankan tanpa internet dengan `DEMO_MODE=true` di `.env`.
 
 ## Perintah yang tersedia
 
@@ -46,6 +62,8 @@ Mahasiswa menempelkan daftar pustaka (APA 7 / IEEE), lalu CekRef memecah tiap en
 | `npm run typecheck` | Periksa tipe TypeScript |
 | `npm run db:generate` | Buat ulang Prisma Client setelah `schema.prisma` berubah |
 | `npm run db:migrate` | Terapkan perubahan skema ke database SQLite lokal |
+| `npm run check -- <file.txt>` | Periksa daftar pustaka dari terminal |
+| `npm run crossref:record` | Rekam ulang respons Crossref untuk fixture test (perlu internet) |
 
 ## Variabel lingkungan
 
@@ -60,14 +78,16 @@ Mahasiswa menempelkan daftar pustaka (APA 7 / IEEE), lalu CekRef memecah tiap en
 ```
 src/
   app/            Halaman Next.js (App Router)
-  engine/         Inti pengecekan: splitter, parser, normalizer, similarity, matcher, classifier
-  lib/            crossref.ts (klien Crossref), db.ts (Prisma client)
+  engine/         Inti pengecekan: splitter, parser, normalizer, similarity, matcher, classifier, check (pipeline)
+  lib/            crossref.ts (klien Crossref), cache.ts, limiter.ts, db.ts (Prisma client)
   config.ts       Bobot, ambang, dan TITLE_METHOD
   generated/      Prisma Client hasil generate (tidak di-commit)
 prisma/           schema.prisma dan migrasi
+scripts/          CLI npm run check dan perekam fixture Crossref
 tests/
-  engine/         Unit test engine
-  fixtures/       Contoh referensi untuk test
+  engine/, lib/   Unit test
+  integration/    Test end-to-end (offline, memakai rekaman Crossref)
+  fixtures/       Contoh referensi asli + rekaman respons Crossref
 data/             Set uji evaluasi (testset.json)
 content/          Materi edukasi dan soal pre/post-test
 demo/             Skenario demo

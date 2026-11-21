@@ -12,7 +12,9 @@
     "typecheck": "next typegen && tsc --noEmit",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "check": "tsx scripts/check.ts",
+    "crossref:record": "tsx scripts/record-crossref-fixtures.ts"
   },
   "dependencies": {
     "@prisma/adapter-libsql": "7.10.1",
@@ -31,6 +33,7 @@
     "eslint-config-next": "16.4.6",
     "prisma": "7.10.1",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.1.0"
   }

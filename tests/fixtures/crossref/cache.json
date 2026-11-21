@@ -1,0 +1,1603 @@
+{
+  "doi:10.1016/j.compedu.2019.103778": {
+    "status": 200,
+    "body": {
+      "DOI": "10.1016/j.compedu.2019.103778",
+      "title": [
+        "A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda"
+      ],
+      "author": [
+        {
+          "given": "Jaziar",
+          "family": "Radianti"
+        },
+        {
+          "given": "Tim A.",
+          "family": "Majchrzak"
+        },
+        {
+          "given": "Jennifer",
+          "family": "Fromm"
+        },
+        {
+          "given": "Isabell",
+          "family": "Wohlgenannt"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            4
+          ]
+        ]
+      },
+      "container-title": [
+        "Computers &amp; Education"
+      ]
+    }
+  },
+  "doi:10.1016/j.neunet.2014.09.003": {
+    "status": 200,
+    "body": {
+      "DOI": "10.1016/j.neunet.2014.09.003",
+      "title": [
+        "Deep learning in neural networks: An overview"
+      ],
+      "author": [
+        {
+          "given": "Jürgen",
+          "family": "Schmidhuber"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            1
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "Neural Networks"
+      ]
+    }
+  },
+  "doi:10.12973/eu-jer.14.4.1259": {
+    "status": 200,
+    "body": {
+      "DOI": "10.12973/eu-jer.14.4.1259",
+      "title": [
+        "Augmented Reality to Enhance Chemistry Learning Outcomes in Vietnamese Lower Secondary Schools: A Quasi-Experimental Study on Acid-Base–pH–Oxide–Salt Topics"
+      ],
+      "author": [
+        {
+          "given": "Pham",
+          "family": "Ngoc Son"
+        },
+        {
+          "given": "Thi Thuan An",
+          "family": "Dang"
+        },
+        {
+          "given": "Vu Thi Thu",
+          "family": "Hoai"
+        },
+        {
+          "given": "Hoai Minh",
+          "family": "Thai"
+        },
+        {
+          "given": "Van Tiem",
+          "family": "Chu"
+        },
+        {
+          "given": "Manh Hung",
+          "family": "Nguyen"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            27
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            27
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            27
+          ]
+        ]
+      },
+      "container-title": [
+        "European Journal of Educational Research"
+      ]
+    }
+  },
+  "doi:10.20885/ijcer.vol10.iss1.art6": {
+    "status": 200,
+    "body": {
+      "DOI": "10.20885/ijcer.vol10.iss1.art6",
+      "title": [
+        "Augmented Reality-Based LKPD Innovation Using Assemblr Edu for Atomic Structure Content"
+      ],
+      "author": [
+        {
+          "given": "Shayda",
+          "family": "Agustina"
+        },
+        {
+          "family": "Hasby"
+        },
+        {
+          "given": "Cyndi",
+          "family": "Prasetya"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            30
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            30
+          ]
+        ]
+      },
+      "container-title": [
+        "IJCER (International Journal of Chemistry Education Research)"
+      ]
+    }
+  },
+  "doi:10.20885/jee.v11i1.37268": {
+    "status": 200,
+    "body": {
+      "DOI": "10.20885/jee.v11i1.37268",
+      "title": [
+        "Students’ perceptions and effects of technology integration in English learning: A case study at National University of Battambang"
+      ],
+      "author": [
+        {
+          "given": "Vireak",
+          "family": "Keo"
+        },
+        {
+          "given": "Rany",
+          "family": "Sam"
+        },
+        {
+          "given": "Bunrosy",
+          "family": "Lan"
+        },
+        {
+          "given": "Wen",
+          "family": "Rouet"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of English and Education (JEE)"
+      ]
+    }
+  },
+  "doi:10.20885/jee.v11i1.40130": {
+    "status": 200,
+    "body": {
+      "DOI": "10.20885/jee.v11i1.40130",
+      "title": [
+        "Emotional experiences and identity construction of pre-service English teachers during teaching practicum in Indonesia"
+      ],
+      "author": [
+        {
+          "given": "Hikmah",
+          "family": "Pravitasari"
+        },
+        {
+          "given": "Elih Sutisna",
+          "family": "Yanto"
+        },
+        {
+          "given": "Ila Nur Kholis",
+          "family": "Fatihah"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            28
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of English and Education (JEE)"
+      ]
+    }
+  },
+  "doi:10.20885/jee.v11i2.40416": {
+    "status": 200,
+    "body": {
+      "DOI": "10.20885/jee.v11i2.40416",
+      "title": [
+        "Cross-curricular perspectives on English language education:  A Qualitative comparative study between Indonesia and Australia"
+      ],
+      "author": [
+        {
+          "given": "Muhammad Ari",
+          "family": "Saputra"
+        },
+        {
+          "family": "Rizky Yolanda"
+        },
+        {
+          "family": "Zelly Putriani"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of English and Education (JEE)"
+      ]
+    }
+  },
+  "doi:10.20885/jee.v11i2.43416": {
+    "status": 200,
+    "body": {
+      "DOI": "10.20885/jee.v11i2.43416",
+      "title": [
+        "Students’ perceptions of English teachers’ emotional intelligence in shaping their speaking skills: A qualitative study"
+      ],
+      "author": [
+        {
+          "given": "Refina",
+          "family": "Dilasani"
+        },
+        {
+          "family": "Sudiran"
+        },
+        {
+          "family": "Hartono"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            30
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of English and Education (JEE)"
+      ]
+    }
+  },
+  "doi:10.29333/ejmste/13436": {
+    "status": 200,
+    "body": {
+      "DOI": "10.29333/ejmste/13436",
+      "title": [
+        "Augmented reality learning media based on tetrahedral chemical representation: How effective in learning process?"
+      ],
+      "author": [
+        {
+          "given": "Sri",
+          "family": "Yamtinah"
+        },
+        {
+          "given": "Elfi",
+          "family": "Susanti VH"
+        },
+        {
+          "given": "Sulistyo",
+          "family": "Saputro"
+        },
+        {
+          "given": "Sri Retno Dwi",
+          "family": "Ariani"
+        },
+        {
+          "given": "Ari Syahidul",
+          "family": "Shidiq"
+        },
+        {
+          "given": "Dwi Retno",
+          "family": "Sari"
+        },
+        {
+          "given": "Deiya Gama",
+          "family": "Ilyasa"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            1
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "Eurasia Journal of Mathematics, Science and Technology Education"
+      ]
+    }
+  },
+  "doi:10.46328/ijemst.4265": {
+    "status": 200,
+    "body": {
+      "DOI": "10.46328/ijemst.4265",
+      "title": [
+        "Application of Augmented Reality in Chemistry Education: A Systemic Review Based on Bibliometric Analysis from 2002 to 2023"
+      ],
+      "author": [
+        {
+          "given": "Nguyen Mau",
+          "family": "Duc"
+        },
+        {
+          "given": "Nguyen Vinh",
+          "family": "Quang"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            22
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            22
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            22
+          ]
+        ]
+      },
+      "container-title": [
+        "International Journal of Education in Mathematics, Science and Technology"
+      ]
+    }
+  },
+  "doi:10.55056/seq.818": {
+    "status": 200,
+    "body": {
+      "DOI": "10.55056/seq.818",
+      "title": [
+        "Enhancing high school students' understanding of molecular geometry with augmented reality"
+      ],
+      "author": [
+        {
+          "given": "Diana A.",
+          "family": "Karnishyna"
+        },
+        {
+          "given": "Tetiana V.",
+          "family": "Selivanova"
+        },
+        {
+          "given": "Pavlo P.",
+          "family": "Nechypurenko"
+        },
+        {
+          "given": "Tetiana V.",
+          "family": "Starova"
+        },
+        {
+          "given": "Serhiy O.",
+          "family": "Semerikov"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            24
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            24
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            24
+          ]
+        ]
+      },
+      "container-title": [
+        "Science Education Quarterly"
+      ]
+    }
+  },
+  "query:4b69fc797ff61f02c6ab739cba44f44f98b48e58c3937ae808ec84a911f1f3ff": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "DOI": "10.65215/pc26a033",
+          "title": [
+            "Attention Is All You Need"
+          ],
+          "author": [
+            {
+              "given": "Ashish",
+              "family": "Vaswani"
+            },
+            {
+              "given": "Noam",
+              "family": "Shazeer"
+            },
+            {
+              "given": "Niki",
+              "family": "Parmar"
+            },
+            {
+              "given": "Jakob",
+              "family": "Uszkoreit"
+            },
+            {
+              "given": "Llion",
+              "family": "Jones"
+            },
+            {
+              "given": "Aidan",
+              "family": "N.Gomez"
+            },
+            {
+              "given": "Lukasz",
+              "family": "Kaiser"
+            },
+            {
+              "given": "Illia",
+              "family": "Polosukhin"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.65215/2q58a426",
+          "title": [
+            "Attention Is All You Need"
+          ],
+          "author": [
+            {
+              "given": "Ashish",
+              "family": "Vaswani"
+            },
+            {
+              "given": "Noam",
+              "family": "Shazeer"
+            },
+            {
+              "given": "Niki",
+              "family": "Parmar"
+            },
+            {
+              "given": "Jakob",
+              "family": "Uszkoreit"
+            },
+            {
+              "given": "Llion",
+              "family": "Jones"
+            },
+            {
+              "given": "Aidan",
+              "family": "N.Gomez"
+            },
+            {
+              "given": "Lukasz",
+              "family": "Kaiser"
+            },
+            {
+              "given": "Illia",
+              "family": "Polosukhin"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.65215/nxvz2v36",
+          "title": [
+            "Attention Is All You Need"
+          ],
+          "author": [
+            {
+              "given": "Ashish",
+              "family": "Vaswani"
+            },
+            {
+              "given": "Noam",
+              "family": "Shazeer"
+            },
+            {
+              "given": "Niki",
+              "family": "Parmar"
+            },
+            {
+              "given": "Jakob",
+              "family": "Uszkoreit"
+            },
+            {
+              "given": "Llion",
+              "family": "Jones"
+            },
+            {
+              "given": "Aidan",
+              "family": "N.Gomez"
+            },
+            {
+              "given": "Lukasz",
+              "family": "Kaiser"
+            },
+            {
+              "given": "Illia",
+              "family": "Polosukhin"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.65215/mdcm8z23",
+          "title": [
+            "Attention Is All You Need"
+          ],
+          "author": [
+            {
+              "given": "Ashish",
+              "family": "Vaswani"
+            },
+            {
+              "given": "Noam",
+              "family": "Shazeer"
+            },
+            {
+              "given": "Niki",
+              "family": "Parmar"
+            },
+            {
+              "given": "Jakob",
+              "family": "Uszkoreit"
+            },
+            {
+              "given": "Llion",
+              "family": "Jones"
+            },
+            {
+              "given": "Aidan",
+              "family": "N.Gomez"
+            },
+            {
+              "given": "Lukasz",
+              "family": "Kaiser"
+            },
+            {
+              "given": "Illia",
+              "family": "Polosukhin"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                23
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.65215/r5bs2d54",
+          "title": [
+            "Attention Is All You Need"
+          ],
+          "author": [
+            {
+              "given": "Ashish",
+              "family": "Vaswani"
+            },
+            {
+              "given": "Noam",
+              "family": "Shazeer"
+            },
+            {
+              "given": "Niki",
+              "family": "Parmar"
+            },
+            {
+              "given": "Jakob",
+              "family": "Uszkoreit"
+            },
+            {
+              "given": "Llion",
+              "family": "Jones"
+            },
+            {
+              "given": "Aidan",
+              "family": "N.Gomez"
+            },
+            {
+              "given": "Lukasz",
+              "family": "Kaiser"
+            },
+            {
+              "given": "Illia",
+              "family": "Polosukhin"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                13
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                13
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "query:669480aefef8570d98545d6482788f8e18d385d4b240a351d6878f8eeb9727c4": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "DOI": "10.52202/075280-1420",
+          "title": [
+            "Defending Pre-trained Language Models as Few-shot Learners against Backdoor Attacks"
+          ],
+          "author": [
+            {
+              "given": "Zhaohan",
+              "family": "Xi"
+            },
+            {
+              "given": "Tianyu",
+              "family": "Du"
+            },
+            {
+              "given": "Changjiang",
+              "family": "Li"
+            },
+            {
+              "given": "Ren",
+              "family": "Pang"
+            },
+            {
+              "given": "Shouling",
+              "family": "Ji"
+            },
+            {
+              "given": "Jinghui",
+              "family": "Chen"
+            },
+            {
+              "given": "Fenglong",
+              "family": "Ma"
+            },
+            {
+              "given": "Ting",
+              "family": "Wang"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 36"
+          ]
+        },
+        {
+          "DOI": "10.52202/079017-0617",
+          "title": [
+            "Revisiting Few-Shot Object Detection with Vision-Language Models"
+          ],
+          "author": [
+            {
+              "given": "Anish",
+              "family": "Madan"
+            },
+            {
+              "given": "Neehar",
+              "family": "Peri"
+            },
+            {
+              "given": "Shu",
+              "family": "Kong"
+            },
+            {
+              "given": "Deva",
+              "family": "Ramanan"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 37"
+          ]
+        },
+        {
+          "DOI": "10.52202/085713-2017",
+          "title": [
+            "Optimization Inspired Few-Shot Adaptation for Large Language Models"
+          ],
+          "author": [
+            {
+              "given": "Boyan",
+              "family": "Gao"
+            },
+            {
+              "given": "Xin",
+              "family": "Wang"
+            },
+            {
+              "given": "Yibo",
+              "family": "Yang"
+            },
+            {
+              "given": "David",
+              "family": "Clifton"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 38"
+          ]
+        },
+        {
+          "DOI": "10.52202/079017-0102",
+          "title": [
+            "Few-Shot Adversarial Prompt Learning on Vision-Language Models"
+          ],
+          "author": [
+            {
+              "given": "Yiwei",
+              "family": "Zhou"
+            },
+            {
+              "given": "Xiaobo",
+              "family": "Xia"
+            },
+            {
+              "given": "Zhiwei",
+              "family": "Lin"
+            },
+            {
+              "given": "Bo",
+              "family": "Han"
+            },
+            {
+              "given": "Tongliang",
+              "family": "Liu"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2024
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 37"
+          ]
+        },
+        {
+          "DOI": "10.52202/075280-0577",
+          "title": [
+            "Human-like Few-Shot Learning via Bayesian Reasoning over Natural Language"
+          ],
+          "author": [
+            {
+              "given": "Kevin",
+              "family": "Ellis"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "container-title": [
+            "Advances in Neural Information Processing Systems 36"
+          ]
+        }
+      ]
+    }
+  },
+  "query:a7d3458f626c3374b2683d776c9415f42447fde28b861ef1a8db1c462b7672da": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "DOI": "10.30651/must.v11i1.32607",
+          "title": [
+            "Development of Assemblr Edu-Based Augmented Reality Learning Media to Overcome Elementary School Students' Misconceptions on Light Material",
+            "Pengembangan Media Pembelajaran Augmented Reality Berbasis Assemblr Edu untuk Mereduksi Miskonsepsi Siswa Sekolah Dasar pada Materi Cahaya"
+          ],
+          "author": [
+            {
+              "given": "Syahrul Khoir",
+              "family": "Al Mubarok"
+            },
+            {
+              "given": "Subuh",
+              "family": "Anggoro"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                31
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                31
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                7,
+                31
+              ]
+            ]
+          },
+          "container-title": [
+            "MUST: Journal of Mathematics Education, Science and Technology"
+          ]
+        },
+        {
+          "DOI": "10.29303/jppipa.v11i8.12116",
+          "title": [
+            "Development of Augmented Reality-Based Learning Media Using Assemblr EDU Integrated with Contextual Teaching and Learning (CTL) for the Human Respiratory System"
+          ],
+          "author": [
+            {
+              "given": "Cahaya Dewi",
+              "family": "Ratih"
+            },
+            {
+              "given": "Subuh",
+              "family": "Anggoro"
+            },
+            {
+              "given": "Masanori",
+              "family": "Fukui"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                25
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                25
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                8,
+                25
+              ]
+            ]
+          },
+          "container-title": [
+            "Jurnal Penelitian Pendidikan IPA"
+          ]
+        },
+        {
+          "DOI": "10.20961/shes.v8i2.105860",
+          "title": [
+            "Pengembangan Media Augmented Reality (AR) Menggunakan Assemblr EDU Berbasis Problem-Based Learning (PBL) Pada Materi Gravitasi"
+          ],
+          "author": [
+            {
+              "given": "Iga Dinata Zata",
+              "family": "Amani"
+            },
+            {
+              "given": "Subuh",
+              "family": "Anggoro"
+            },
+            {
+              "given": "Masanori",
+              "family": "Fukui"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                29
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                29
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                29
+              ]
+            ]
+          },
+          "container-title": [
+            "Social, Humanities, and Educational Studies (SHES): Conference Series"
+          ]
+        },
+        {
+          "DOI": "10.21070/ups.10660",
+          "title": [
+            "Assemblr Edu-Based Augmented Reality (AR) Learning Media in Science Learning of Water Cycle Material for Fifth Grade Elementary School Students"
+          ],
+          "author": [
+            {
+              "given": "Novi Sinta",
+              "family": "Febriyanti"
+            },
+            {
+              "given": "Fitria",
+              "family": "Wulandari"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                15
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                4,
+                15
+              ]
+            ]
+          }
+        },
+        {
+          "DOI": "10.21070/ijemd.v21i1.1089",
+          "title": [
+            "Assemblr Edu-Based Augmented Reality (AR) Learning Media in Science Learning of Water Cycle Material for Fifth Grade Elementary School Students"
+          ],
+          "author": [
+            {
+              "given": "Novi Sinta",
+              "family": "Febriyanti"
+            },
+            {
+              "given": "Fitria",
+              "family": "Wulandari"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                14
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                14
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                14
+              ]
+            ]
+          },
+          "container-title": [
+            "Indonesian Journal of Education Methods Development"
+          ]
+        }
+      ]
+    }
+  },
+  "query:ac1d709119f9f3c6dfde93b8198bfa5046a4863d70cc4b6b6f400d901c134adc": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "DOI": "10.2139/ssrn.3566298",
+          "title": [
+            "World Health Organization Declared a Pandemic Public Health Menace: A Systematic Review of the Coronavirus Disease 2019 “COVID-19”"
+          ],
+          "author": [
+            {
+              "given": "Nadia",
+              "family": "Jebril"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2020
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2020
+              ]
+            ]
+          },
+          "container-title": [
+            "SSRN Electronic Journal"
+          ]
+        },
+        {
+          "DOI": "10.1016/j.wneu.2020.03.068",
+          "title": [
+            "Emotional Health in the Midst of the Coronavirus Disease 2019 (COVID-19) Pandemic"
+          ],
+          "author": [
+            {
+              "given": "Ed",
+              "family": "Benzel"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                6
+              ]
+            ]
+          },
+          "container-title": [
+            "World Neurosurgery"
+          ]
+        },
+        {
+          "DOI": "10.1201/9781003161066-1",
+          "title": [
+            "Corona Virus Disease (COVID-19) Pandemic"
+          ],
+          "author": [
+            {
+              "given": "Manish",
+              "family": "Tongo"
+            },
+            {
+              "given": "Smita",
+              "family": "Nirkhi"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                2
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                2
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                4,
+                2
+              ]
+            ]
+          },
+          "container-title": [
+            "Health Informatics and Technological Solutions for Coronavirus (COVID-19)"
+          ]
+        },
+        {
+          "DOI": "10.1201/9781003358909-23",
+          "title": [
+            "Role of the World Health Organization in Combating the COVID-19 Pandemic"
+          ],
+          "author": [
+            {
+              "family": "Brijesh"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                15
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                15
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2023,
+                6,
+                15
+              ]
+            ]
+          },
+          "container-title": [
+            "Learning from the COVID-19 Pandemic"
+          ]
+        },
+        {
+          "DOI": "10.1016/b978-0-323-85780-2.00017-2",
+          "title": [
+            "Updated insight into COVID-19 disease and health management to combat the pandemic"
+          ],
+          "author": [
+            {
+              "given": "Sharmili",
+              "family": "Roy"
+            },
+            {
+              "given": "Archana",
+              "family": "Ramadoss"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "published-print": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2021
+              ]
+            ]
+          },
+          "container-title": [
+            "Environmental and Health Management of Novel Coronavirus Disease (COVID-19 )"
+          ]
+        }
+      ]
+    }
+  }
+}
