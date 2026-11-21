@@ -65,3 +65,33 @@ Menggantikan keputusan "Proyek dikerjakan perorangan" (2026-11-12).
 
 - **Keputusan:** README dan panduan tim mensyaratkan Node.js 22.12 atau lebih baru, disarankan 24 LTS.
 - **Alasan:** Vitest 5 hanya mendukung Node `^22.12.0 || ^24.0.0 || >=26.0.0`. README sebelumnya keliru menulis 20.19.
+
+## 2026-11-22 — Fase 2: bentuk data hasil pengecekan (CheckResult)
+
+- **Keputusan:** Tipe bersama di `src/engine/types.ts`: `label` (`match` / `partial` / `not_found`, diterjemahkan ke teks Indonesia lewat `LABEL_TEXT`), `score`, `reasons[]`, `best` (kandidat Crossref terbaik), `fields[]` (perbandingan per field untuk halaman Detail), `lookup` (`doi` / `search` / `none`), dan `fromCache`. Diajukan lewat draft PR #3 untuk di-review Anggota B.
+- **Alasan:** Halaman Cek, Detail, dan Riwayat (Fase 3–4) membutuhkan bentuk yang sama; kode memakai nilai bahasa Inggris, teks yang tampil berbahasa Indonesia (CLAUDE.md Bagian 2 butir 7).
+
+## 2026-11-22 — Fase 2: aturan skor yang diperluas dari CLAUDE.md
+
+- **Keputusan:**
+  - Field yang kosong **di input atau di Crossref** tidak dinilai, dan bobotnya dibagi ulang ke field lain. CLAUDE.md hanya menyebut field kosong di input.
+  - Nama belakang penulis dianggap ada di kandidat bila sama setelah normalisasi **atau** salah satunya merupakan bagian kata dari yang lain ("Son" vs Crossref "Ngoc Son").
+  - Venue dibandingkan dengan metode yang sama dengan judul (`TITLE_METHOD`).
+  - Field dengan kemiripan di bawah `thresholds.fieldMismatch` (0.85) mendapat alasan tersendiri.
+- **Alasan:** Data Crossref sering tidak lengkap atau berbeda penulisan (lihat `tests/fixtures/references-sources.md`). Kekurangan data di Crossref bukan kesalahan pengguna, jadi tidak boleh menurunkan skor.
+
+## 2026-11-22 — Fase 2: klien Crossref dan cache
+
+- **Keputusan:** Satu jalur lookup untuk DOI dan pencarian: cek cache → (bila `DEMO_MODE` mati) panggil Crossref dengan maksimal 3 permintaan bersamaan, timeout 8 detik, retry 1x dengan backoff untuk error jaringan/429/5xx, dan jarak antar-permintaan dari header `x-rate-limit-*`. Respons 200 **dan 404** disimpan di tabel `CrossrefCache` (kunci `doi:<doi>` atau `query:<sha256>`). DOI yang tidak dikenal Crossref dilanjutkan ke pencarian. Pembatas permintaan (`src/lib/limiter.ts`) ditulis sendiri.
+- **Alasan:** Menyimpan 404 membuat demo konsisten tanpa internet. `fetch` dan cache disuntikkan sehingga semua unit test berjalan tanpa jaringan. Kegagalan jaringan dilaporkan sebagai "Crossref tidak dapat dihubungi", bukan sebagai referensi bermasalah.
+
+## 2026-11-22 — Fase 2: pipeline `check.ts` dan CLI
+
+- **Keputusan:** `src/engine/check.ts` (tambahan di luar daftar file CLAUDE.md) menyatukan splitter → parser → lookup → matcher → classifier. `checkReferences` memberi callback progres untuk UI Fase 3; `checkParsed` dipakai untuk cek ulang setelah koreksi pengguna. Query pencarian disusun dari field hasil parsing (judul, nama penulis, venue, tahun); teks mentah dipakai bila judul tidak terbaca. CLI `npm run check -- file.txt` memakai `tsx`.
+- **Alasan:** Fase 3 butuh satu fungsi yang bisa dipanggil halaman Cek. Query dari field membuat hasil koreksi pengguna ikut memengaruhi pencarian.
+
+## 2026-11-22 — Fase 2: integration test memakai rekaman Crossref asli
+
+- **Keputusan:** Respons Crossref untuk 15 referensi fixture direkam sekali (`npm run crossref:record`, tanpa email kontak) ke `tests/fixtures/crossref/cache.json`. Integration test menjalankan pipeline end-to-end dalam `DEMO_MODE`, jadi tidak pernah memakai internet.
+- **Alasan:** Menguji pada data Crossref sungguhan, termasuk ketidakrapiannya, tetapi tetap cepat dan stabil.
+- **Temuan awal untuk Fase 5:** ke-11 referensi ber-DOI selalu **Cocok** (skor 1.0) dengan kedua metode. Untuk entri 5 (JES, tidak terindeks) dan 12 (halaman WHO), Crossref mengembalikan artikel *lain* yang judulnya mirip: Jaro-Winkler menilainya **Cocok Sebagian** (0.82 dan 0.62), sedangkan Jaccard menolaknya (**Tidak Ditemukan**). Ini indikasi awal bahwa bonus awalan Jaro-Winkler rawan salah positif pada judul panjang. Bobot dan ambang sengaja **tidak** diubah; keputusan dibuat di Fase 5 berdasarkan testset.
