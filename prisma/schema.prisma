@@ -11,3 +11,14 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+/// Cached Crossref responses (Phase 2, owner: member A).
+/// key = "doi:<doi>" or "query:<sha256 of rows|query>".
+model CrossrefCache {
+  key       String   @id
+  /// HTTP status Crossref returned (200 or 404).
+  status    Int
+  /// JSON of the Crossref `message` ("null" for a 404).
+  response  String
+  fetchedAt DateTime @default(now())
+}
