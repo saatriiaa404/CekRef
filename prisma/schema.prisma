@@ -11,3 +11,49 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+model User {
+  id           String         @id @default(cuid())
+  email        String         @unique
+  passwordHash String
+  role         String         @default("user")
+  createdAt    DateTime       @default(now())
+  sessions     Session[]
+  histories    CheckHistory[]
+  testScores   TestScore[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model CheckHistory {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  entryCount Int
+  results    String
+  createdAt  DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+model TestScore {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kind      String
+  score     Int
+  total     Int
+  answers   String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, kind])
+}

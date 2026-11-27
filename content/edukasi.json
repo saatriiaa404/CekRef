@@ -1,0 +1,46 @@
+{
+  "title": "Edukasi: Memahami Halusinasi Sitasi AI & Cara Verifikasi Manual",
+  "subtitle": "Mengapa referensi buatan AI terdengar meyakinkan namun bisa keliru, dan bagaimana cara memeriksanya secara mandiri.",
+  "whyAiTitle": "1. Kenapa AI Bisa Mengarang Sitasi?",
+  "whyAiParagraphs": [
+    "Model bahasa AI (seperti ChatGPT atau asisten AI generatif lainnya) tidak bekerja seperti mesin pencari atau basis data jurnal ilmiah. Saat diminta daftar pustaka, AI memprediksi urutan kata yang secara statistik terdengar wajar dan akademis.",
+    "Akibatnya, AI sering menggabungkan potongan fakta nyata—misalnya nama peneliti terkenal dan nama jurnal bereputasi—dengan judul artikel, tahun terbit, volume, atau nomor DOI yang sebenarnya tidak pernah ada.",
+    "Fenomena ini disebut halusinasi sitasi. Sekilas format APA atau IEEE-nya terlihat sangat rapi, padahal artikel tersebut tidak pernah diterbitkan."
+  ],
+  "whyAiExamples": [
+    {
+      "label": "Judul terlihat sangat relevan dengan topik",
+      "detail": "AI merangkai kata kunci dari pertanyaanmu menjadi judul artikel fiktif yang seolah-olah tepat membahas masalah tersebut."
+    },
+    {
+      "label": "Nama penulis nyata dipasangkan dengan artikel fiktif",
+      "detail": "AI mengenal nama pakar di bidang tertentu, lalu menempelkan nama mereka ke judul karangan."
+    },
+    {
+      "label": "DOI berformat benar tetapi tidak terdaftar",
+      "detail": "Awalan 10.xxxx/ tampak resmi, namun saat dibuka di doi.org halaman tidak ditemukan atau mengarah ke artikel yang sama sekali berbeda."
+    }
+  ],
+  "manualStepsTitle": "2. Tiga Langkah Verifikasi Manual",
+  "manualSteps": [
+    {
+      "number": 1,
+      "title": "Periksa DOI di doi.org",
+      "description": "Jika referensi mencantumkan DOI, buka https://doi.org/<nomor-doi> di browser. Pastikan tautan tersebut terbuka dan judul artikel di halaman tujuan sama persis dengan yang tertulis di daftar pustaka.",
+      "tip": "Waspadai DOI yang mengarah ke artikel lain atau memunculkan pesan DOI Not Found."
+    },
+    {
+      "number": 2,
+      "title": "Cari Judul di Google Scholar atau Situs Jurnal",
+      "description": "Salin judul artikel lalu cari dengan tanda kutip di Google Scholar, Crossref, Garuda/SINTA (untuk jurnal Indonesia), atau langsung di situs resmi penerbit jurnal.",
+      "tip": "Banyak jurnal lokal Indonesia yang asli namun belum terindeks Crossref. Jika tidak ada di Crossref, cek langsung ke Google Scholar atau SINTA."
+    },
+    {
+      "number": 3,
+      "title": "Cocokkan Penulis, Tahun, Volume, dan Halaman",
+      "description": "Setelah artikel asli ditemukan, bandingkan seluruh rincian: urutan nama penulis, tahun terbit, nama jurnal/konferensi, volume/nomor, dan rentang halaman.",
+      "tip": "Perbedaan tahun terbit, nama jurnal, atau nama penulis yang tertukar sering menandakan kesalahan penyalinan atau sitasi hasil karangan."
+    }
+  ],
+  "closingNote": "Catatan penting: status 'Tidak Ditemukan di Database' di CekRef bukan berarti referensi pasti bermasalah. Selalu lakukan tiga langkah verifikasi manual di atas sebelum memutuskan."
+}

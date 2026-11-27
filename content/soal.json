@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "reference": "Radianti, J., Majchrzak, T. A., Fromm, J., & Wohlgenannt, I. (2020). A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda. Computers & Education, 147, Article 103778. https://doi.org/10.1016/j.compedu.2019.103778",
+      "answer": "real",
+      "explanation": "Referensi asli. Terbit di jurnal Computers & Education volume 147 tahun 2020, dengan DOI 10.1016/j.compedu.2019.103778 yang valid dan sesuai dengan judul serta penulisnya."
+    },
+    {
+      "id": "q2",
+      "reference": "J. Schmidhuber, \"Deep learning in neural networks: An overview,\" Neural Networks, vol. 61, pp. 85–117, Jan. 2015, doi: 10.1016/j.neunet.2014.09.003.",
+      "answer": "real",
+      "explanation": "Referensi asli. Artikel survei klasik karya Jürgen Schmidhuber di jurnal Neural Networks (2015) dengan DOI 10.1016/j.neunet.2014.09.003 yang valid."
+    },
+    {
+      "id": "q3",
+      "reference": "Dilasani, R., Sudiran, & Hartono. (2025). Students’ perceptions of English teachers’ emotional intelligence in shaping their speaking skills: A qualitative study. Journal of English and Education (JEE), 11(2), 88–102. https://doi.org/10.20885/jee.v11i2.43416",
+      "answer": "real",
+      "explanation": "Referensi asli dari Journal of English and Education (JEE) Universitas Islam Indonesia, volume 11 nomor 2 tahun 2025, dengan DOI yang terverifikasi."
+    },
+    {
+      "id": "q4",
+      "reference": "A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, \"Attention is all you need,\" arXiv preprint arXiv:1706.03762, 2017. [Online]. Available: https://arxiv.org/abs/1706.03762",
+      "answer": "real",
+      "explanation": "Referensi asli. Walaupun tidak memakai DOI Crossref karena berupa pracetak arXiv, artikel, kedelapan penulis, tahun 2017, dan tautan arXiv:1706.03762 memang benar ada."
+    },
+    {
+      "id": "q5",
+      "reference": "Agustina, S., Hasby, & Prasetya, C. (2026). Augmented Reality-Based LKPD Innovation Using Assemblr Edu for Atomic Structure Content. IJCER (International Journal of Chemistry Education Research), 10(1), 56–66. https://doi.org/10.20885/ijcer.vol10.iss1.art6",
+      "answer": "real",
+      "explanation": "Referensi asli dari jurnal IJCER UII tahun 2026, dengan metadata penulis, judul, dan DOI 10.20885/ijcer.vol10.iss1.art6 yang cocok."
+    },
+    {
+      "id": "q6",
+      "reference": "Hendra, B., & Kusuma, D. (2022). Automated hallucination detection in Indonesian undergraduate theses using transformer ensembles. Journal of Machine Learning Research, 23(44), 1–18. https://doi.org/10.5555/jmlr.2022.99182",
+      "answer": "problematic",
+      "explanation": "Referensi bermasalah. DOI 10.5555/jmlr.2022.99182 tidak terdaftar, dan artikel tersebut tidak pernah terbit di Journal of Machine Learning Research."
+    },
+    {
+      "id": "q7",
+      "reference": "R. K. Putri, A. Pratama, and S. Wijaya, \"Evaluating ChatGPT citation accuracy for SINTA-indexed engineering journals,\" IEEE Transactions on Learning Technologies, vol. 14, no. 2, pp. 412–425, Mar. 2020, doi: 10.1109/TLT.2020.9988771.",
+      "answer": "problematic",
+      "explanation": "Referensi bermasalah. Topik evaluasi ChatGPT tidak mungkin terbit pada Maret 2020 karena ChatGPT baru dirilis pada akhir 2022; selain itu nomor DOI tersebut tidak ada."
+    },
+    {
+      "id": "q8",
+      "reference": "Vaswani, A., Bengio, Y., & LeCun, Y. (2019). Neural machine translation with self-attentive recurrent memory networks. Nature Machine Intelligence, 1(8), 340–352. https://doi.org/10.1016/j.neunet.2014.09.003",
+      "answer": "problematic",
+      "explanation": "Referensi bermasalah. DOI 10.1016/j.neunet.2014.09.003 sebenarnya milik artikel J. Schmidhuber (2015) di Neural Networks, bukan artikel Nature Machine Intelligence tahun 2019."
+    },
+    {
+      "id": "q9",
+      "reference": "M. F. Nugroho and T. Hidayat, \"Blockchain-based academic bibliography verification in higher education,\" Computers & Education, vol. 189, pp. 104512, Nov. 2023, doi: 10.1016/j.compedu.2023.104999.",
+      "answer": "problematic",
+      "explanation": "Referensi bermasalah. Nomor artikel dan DOI tidak cocok serta judul tersebut tidak ditemukan pada publikasi Computers & Education."
+    },
+    {
+      "id": "q10",
+      "reference": "Sari, N. P., & Ramadhan, F. (2021). Efektivitas media pembelajaran berbasis AI generatif dalam mencegah plagiarisme sitasi mahasiswa. Jurnal Pendidikan Teknologi Informasi Nasional, 8(3), 210–224. https://doi.org/10.12345/jptin.v8i3.774",
+      "answer": "problematic",
+      "explanation": "Referensi bermasalah. Prefiks DOI 10.12345/ adalah awalan fiktif/contoh dan nama jurnal tersebut tidak ditemukan pada basis data ilmiah."
+    }
+  ]
+}
