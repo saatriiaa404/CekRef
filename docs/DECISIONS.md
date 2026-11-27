@@ -65,3 +65,50 @@ Menggantikan keputusan "Proyek dikerjakan perorangan" (2026-11-12).
 
 - **Keputusan:** README dan panduan tim mensyaratkan Node.js 22.12 atau lebih baru, disarankan 24 LTS.
 - **Alasan:** Vitest 5 hanya mendukung Node `^22.12.0 || ^24.0.0 || >=26.0.0`. README sebelumnya keliru menulis 20.19.
+
+## 2026-11-27 — Fase 4: autentikasi, edukasi, tes, riwayat
+
+### Session token
+
+- **Keputusan:** Token sesi adalah string acak 32-byte (base64url) yang dikirim ke browser lewat cookie. Yang disimpan di database adalah SHA-256-hash dari token tersebut (kolom `tokenHash`), bukan token aslinya.
+- **Alasan:** Jika database bocor, penyerang tidak dapat langsung menggunakan nilai yang tersimpan sebagai cookie — mereka harus menemukan pra-gambar SHA-256. Pendekatan ini tidak memerlukan secret eksternal sehingga `.env` tidak perlu variabel tambahan.
+
+### Cookie sesi
+
+- **Keputusan:** `httpOnly: true`, `sameSite: "lax"`, `path: "/"`, `maxAge: 7 hari`. Flag `secure` hanya di-set di production (`NODE_ENV === "production"`).
+- **Alasan:** `httpOnly` mencegah pembacaan lewat JavaScript. `sameSite: "lax"` cukup untuk aplikasi web biasa (tanpa kebutuhan cross-site POST). `secure` dimatikan di development agar bisa dicoba di `http://localhost`.
+
+### Data yang disimpan
+
+- **Keputusan:** Tabel `User` hanya menyimpan `email` (dalam huruf kecil) dan `passwordHash` (bcrypt). Tidak ada nama, NIM, foto profil, atau data pribadi lain.
+- **Alasan:** Prinsip minimal data sesuai CLAUDE.md. Email dinormalisasi (huruf kecil, tanpa spasi) sebelum disimpan dan sebelum pengecekan login.
+
+### Role admin
+
+- **Keputusan:** Kolom `role` di tabel `User`, nilai `"user"` (default) atau `"admin"`. Akun admin dibuat/diperbarui lewat `npm run seed:admin <email> <password>` (tidak ada pendaftaran admin lewat UI).
+- **Alasan:** Halaman `/admin` hanya perlu satu level tambahan di atas user biasa. Tidak ada UI manajemen pengguna agar lingkup tetap minimal.
+
+### Pre-test vs post-test
+
+- **Keputusan:** Pre-test dan post-test menggunakan soal yang sama (`content/soal.json`). Pre-test hanya menampilkan skor total; post-test menampilkan skor + perbandingan dengan pre-test + pembahasan jawaban benar.
+- **Alasan:** Desain quasi-eksperimen: soal sama memudahkan perbandingan skor. Pembahasan di post-test memberi nilai edukasi tambahan.
+
+### Penyimpanan skor
+
+- **Keputusan:** `TestScore` menyimpan setiap pengiriman tes (pre/post bisa diulang). Untuk pre-test, skor yang ditampilkan adalah skor pertama; untuk post-test, skor yang ditampilkan adalah skor terbaru. Halaman admin menampilkan rata-rata seluruh pengguna.
+- **Alasan:** Menyimpan semua sesi memungkinkan analisis lebih lanjut tanpa mengubah skema. Aturan "pre = pertama, post = terbaru" mencerminkan logika quasi-eksperimen paling sederhana.
+
+### Jumlah soal
+
+- **Keputusan:** 10 soal per tes (sesuai FASE-3-4.md §4.3). Tiap soal menampilkan satu referensi; pengguna memilih "Asli" atau "Bermasalah".
+- **Alasan:** 10 soal cukup untuk mengukur pemahaman awal vs. akhir tanpa terlalu lama.
+
+### Halaman riwayat — panel detail inline
+
+- **Keputusan:** Detail tiap referensi dalam riwayat ditampilkan sebagai panel yang bisa dibuka/ditutup di bawah baris tabel, bukan halaman terpisah.
+- **Alasan:** Lebih cepat untuk menelusuri beberapa referensi sekaligus; menghindari navigasi bolak-balik.
+
+### Soal tes — konten ditulis tim, bukan AI
+
+- **Keputusan:** Soal di `content/soal.json` wajib di-review dan disetujui oleh anggota tim sebelum di-commit ke `main`.
+- **Alasan:** CLAUDE.md melarang AI mengarang konten tes secara mandiri. Referensi fixture di `tests/fixtures/` dipakai sebagai bahan acuan, namun keputusan final ada di tangan tim.
